@@ -1,0 +1,7 @@
+<div>
+    {% for projet in projets %}
+    <h2>{{ projet.libelle }}</h2>
+    <img src="{{ url_for('static', filename='charity_image/'+ projet.image)}}"></img>
+    <h3>{{ projet.description }}</h3>
+    {% endfor %}
+</div>
